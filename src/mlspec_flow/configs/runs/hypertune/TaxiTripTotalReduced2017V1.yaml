@@ -1,0 +1,15 @@
+trainingInput:
+  hyperparameters:
+    goal: MINIMIZE
+    hyperparameterMetricTag: loss
+    maxTrials: 4
+    maxParallelTrials: 4
+    enableTrialEarlyStopping: True
+    params:
+    - parameterName: learning_rate
+      type: DISCRETE
+      discreteValues:
+      - 0.0001
+      - 0.001
+      - 0.01
+      - 0.1

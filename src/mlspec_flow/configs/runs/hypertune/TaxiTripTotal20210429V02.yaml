@@ -1,0 +1,15 @@
+trainingInput:
+  hyperparameters:
+    goal: MINIMIZE
+    hyperparameterMetricTag: loss
+    maxTrials: 4
+    maxParallelTrials: 2
+    enableTrialEarlyStopping: True
+    params:
+    - parameterName: hidden_units
+      type: CATEGORICAL
+      categoricalValues:
+      - '[512, 256, 64, 32]'
+      - '[128, 64, 32]'
+      - '[64, 32, 16]'
+      - '[32, 16]'

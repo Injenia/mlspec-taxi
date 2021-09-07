@@ -1,0 +1,6 @@
+#!/bin/bash
+
+MODELDIR=gs://mlteam-ml-specialization-2021-taxi/tft_flows/TaxiTS2017MinimalV01/models/20210521V02/1/export/1621856445/
+AI_PLATFORM_PREDICTION_REGION=europe-west1
+AI_PLATFORM_PREDICTION_MODEL=taxi_trip_seconds
+AI_PLATFORM_PREDICTION_VERSION=TaxiTS2017MinimalV01_20210521V02

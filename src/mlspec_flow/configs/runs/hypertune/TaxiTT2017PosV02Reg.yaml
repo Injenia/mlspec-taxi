@@ -1,0 +1,32 @@
+trainingInput:
+  hyperparameters:
+    goal: MINIMIZE
+    hyperparameterMetricTag: loss
+    maxTrials: 32
+    maxParallelTrials: 8
+    enableTrialEarlyStopping: True
+    params:
+    - parameterName: linear_l1
+      type: DISCRETE
+      discreteValues:
+      - 0.0
+      - 0.0001
+      - 0.01
+    - parameterName: linear_l2
+      type: DISCRETE
+      discreteValues:
+      - 0.0
+      - 0.0001
+      - 0.01
+    - parameterName: deep_l1
+      type: DISCRETE
+      discreteValues:
+      - 0.0
+      - 0.0001
+      - 0.01
+    - parameterName: deep_l2
+      type: DISCRETE
+      discreteValues:
+      - 0.0
+      - 0.0001
+      - 0.01
