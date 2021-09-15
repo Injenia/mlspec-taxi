@@ -8,7 +8,7 @@ Dataset homepage: [here](https://digital.cityofchicago.org/index.php/chicago-tax
 
 
 
-### EDA
+## EDA
 
 **001**: analysis of null values, Distribution of both targets, Correlations between columns  
 **002**: Correlation of engineered features (L1,L2 distances) with other columns  
