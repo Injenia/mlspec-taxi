@@ -26,7 +26,7 @@ cd src/mlspec_flow
 
 ### **Preparation**
 
-Choose a run from the ones available in src/mlspec_flow/configs/runs/
+Choose a run from the ones available in `src/mlspec_flow/configs/runs/`  
 Runs that are ultimately reported in the whitepaper are:
 
 - TaxiTS2017MinimalV01 (TripSeconds)
@@ -38,37 +38,37 @@ export RUN=TaxiTT2017PosTimeCompanyV01
 
 ### **Full training process is made of 5 steps**
 
-Initialization: Performs GCS setup
+__Initialization__: Performs GCS setup
 
 ```bash
 python run.py initialize $RUN
 ```
 
-Preprocessing: Launches a dataflow pipeline that generates TFRrecords
+__Preprocessing__: Launches a dataflow pipeline that generates TFRrecords
 
 ```bash
 python run.py preprocess $RUN
 ```
 
-Training: Launches an AI Platform job that trains the model
+__Training__: Launches an AI Platform job that trains the model
 
 ```bash
 python run.py train $RUN
 ```
 
-Model export: Exports the model, if the training was configured to be an hyperparameter tuning, the best model (according to the evaluation metric) is exported
+__Model export__: Exports the model, if the training was configured to be an hyperparameter tuning, the best model (according to the evaluation metric) is exported
 
 ```bash
 python run.py select_best_model $RUN
 ```
 
-Validation: Launches a Dataflow pipeline that runs the exported model on the test set
+__Validation__: Launches a Dataflow pipeline that runs the exported model on the test set
 
 ```bash
 python run.py validate $RUN
 ```
 
-Evaluatrion: Prints model performances calculated on the validation results 
+__Evaluation__: Prints model performances calculated on the validation results 
 
 ```bash
 python run.py evaluate $RUN
