@@ -56,7 +56,7 @@ __Training__: Launches an AI Platform job that trains the model
 python run.py train $RUN
 ```
 
-__Model export__: Exports the model, if the training was configured to be an hyperparameter tuning, the best model (according to the evaluation metric) is exported
+__Best model selection__: Selects the best model (according to the evaluation metric) produced by the HPTuning, if no HPTuning is performed, the selected model is just the result of the training
 
 ```bash
 python run.py select_best_model $RUN
